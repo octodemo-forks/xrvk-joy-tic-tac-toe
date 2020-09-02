@@ -26,6 +26,6 @@ jobs:
     - name: Publish Docker
       uses: elgohr/Publish-Docker-Github-Action@2.14
       with:
-        name: jennieohyoung/demo_repo:tictactoe
+        name: jennieohyoung/demo_repo:tictactoe-${GITHUB_RUN_NUMBER}
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
